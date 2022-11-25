@@ -14,4 +14,4 @@ jobs:
     - name: execute
       env: 
         WEIXIN_TOKEN: ${{secrets.WEIXIN_TOKEN}}
-      run: curl -X POST 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=$WEIXIN_TOKEN' --header 'Content-Type: application/json' --data '{"msgtype":"text","text":{"content":"生活小蜜提醒您现在是 $data ,您该喝水了，休息一下"}}'
+      run: curl -X POST 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=$WEIXIN_TOKEN' --header 'Content-Type:application/json' --data '{"msgtype":"text","text":{"content":"生活小蜜提醒您现在是 $data ,您该喝水了，休息一下"}}'
