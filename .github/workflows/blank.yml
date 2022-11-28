@@ -17,5 +17,5 @@ jobs:
       
     - name: execute
       env: 
-        WEIXIN_TOKEN: ${{ secrets.Actions.WEIXIN_TOKEN }}
+        WEIXIN_TOKEN: ${{ secrets.WEIXIN_TOKEN }}
       run: bash b.sh
